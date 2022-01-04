@@ -15,8 +15,7 @@ function preload(){
   diamondsImg = loadImage("diamonds.png");
   jwelleryImg = loadImage("jwell.png");
   swordImg = loadImage("sword.png");
- //write a code to load the image named gameOver.png
- 
+  gover = loadImage("gameOver.png");
 }
 
 function setup(){
@@ -87,11 +86,10 @@ function draw() {
         diamondsG.setVelocityYEach(0);
         jwelleryG.setVelocityYEach(0);
         swordGroup.setVelocityYEach(0);
-create a sprite
-add a animation for gameover
-scale the gameover image
-
-       
+        
+         over = createSprite(180,280,20,20);
+         over.addAnimation("gameover",gover);
+        over.scale=0.7
      
     }
   }
